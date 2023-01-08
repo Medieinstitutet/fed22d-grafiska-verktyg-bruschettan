@@ -37,3 +37,9 @@
 * hur er tidsplans ser ut, vad ni har för milstolpar och hur ni hanterar om ni märker att ni hamnar efter/före i planeringen
 * Vi siktar på att vara klara med designen tills fredag.
 <br>
+
+## Underskrivet av
+@antonjanzon95
+@anvandare2
+@anvandare3
+@anvandare4
