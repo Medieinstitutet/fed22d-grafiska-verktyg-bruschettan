@@ -10,10 +10,12 @@
 - Vi kör Eslint och Prettier.
 - Vi använder oss av kebab-case i HTML och camelCase i Javascript
 - När vi commitar börjar vi med en gitmoji, Följt av engelska.
-- Vi jobbar med "mobile first" tänket när vi designar. 
+- Vi jobbar med "mobile first" tänket när vi designar.
 - Vi delar upp arbetet rättvist.
 
 ## Underskrivet av
 
 - [@existenztim](https://www.github.com/existenztim)
-
+- [@Sofilus](https://github.com/Sofilus)
+- [@emiliamassing](https://github.com/emiliamassing)
+- [@evelinanorlin](https://github.com/evelinanorlin)
