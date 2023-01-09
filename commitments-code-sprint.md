@@ -17,4 +17,5 @@
 
 - [@existenztim](https://www.github.com/existenztim)
 - [@Sofilus](https://github.com/Sofilus)
+- [@emiliamassing](https://github.com/emiliamassing)
 
