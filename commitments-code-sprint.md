@@ -16,4 +16,5 @@
 ## Underskrivet av
 
 - [@existenztim](https://www.github.com/existenztim)
+- [@Sofilus](https://github.com/Sofilus)
 
