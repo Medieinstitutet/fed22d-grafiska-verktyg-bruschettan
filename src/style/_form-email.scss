@@ -8,7 +8,7 @@
     
     .subscribe-newsletter {
         width: 95vw;
-        height: 200px;
+        height: 160px;
         border: var.$primaryColor solid 1px;
         border-radius: 15px;
         margin: 0 auto;
@@ -19,14 +19,31 @@
 
             margin: {
                 top: 20px;
-                bottom: 30px;
+                bottom: 20px;
             }
 
             font: {
-                family: var.$prostoOne;
                 weight: 400;
-                size: 36px;
+                size: 2.25rem;
             } 
+        }
+        form {
+            text-align: center;
+            input {
+                background: none;
+                width: 70vw;
+                font-size: 2.25rem;
+
+                border: {
+                    top: none;
+                    left: none;
+                    right: none;
+                    bottom: 1px solid var.$primaryColor;
+                }
+            }
+            button {
+                font-size: 28px;
+            }
         }
     }
 }
