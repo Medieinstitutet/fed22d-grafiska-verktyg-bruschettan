@@ -21,6 +21,11 @@ nav {
         height: 50vh;
         align-items: center;
         justify-content: space-between;
+
+        a {
+            color: var.$primaryColor;
+            font-size: 2.6rem;
+        }
     }
 }
 
