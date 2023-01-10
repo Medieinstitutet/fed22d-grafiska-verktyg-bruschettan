@@ -1,0 +1,33 @@
+@use 'variables' as var;
+
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px){
+    
+    .subscribe-newsletter {
+        width: 95vw;
+        height: 200px;
+        border: var.$primaryColor solid 1px;
+        border-radius: 15px;
+        margin: 0 auto;
+        color: var.$secondaryYellow;
+        h2 {
+            text-align: center;
+            width: 100%;
+
+            margin: {
+                top: 20px;
+                bottom: 30px;
+            }
+
+            font: {
+                family: var.$prostoOne;
+                weight: 400;
+                size: 36px;
+            } 
+        }
+    }
+}
+
