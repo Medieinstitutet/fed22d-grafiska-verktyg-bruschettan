@@ -7,15 +7,15 @@ const menuBtnBottomStripe = document.querySelector('.menu-btn-stripes span:nth-c
 const menuNav = document.querySelector('.menu-nav');
 // const menuTl = new gsap.timeline({ repeat: 0, repeatDelay: 0 }); // for infinite repeat add -1
 
-menuNav.classList.toggle('hidden');
+menuNav.classList.toggle('hidden-menu');
 
 /**
  * Menu toggle for mobile/tablet
  */
 
 const menuToggle = () => {
-  menuNav.classList.toggle('hidden');
-  if (!menuNav.classList.contains('hidden')) {
+  menuNav.classList.toggle('hidden-menu');
+  if (!menuNav.classList.contains('hidden-menu')) {
     gsap.fromTo(
       '.menu-nav',
       { yPercent: -100 },
@@ -38,10 +38,6 @@ const menuToggle = () => {
       y: 0,
     });
   } else {
-    gsap.to('.menu-nav', {
-      yPercent: -100,
-    });
-
     gsap.to(menuBtnMiddleStripe, {
       x: 0,
       opacity: 1,
