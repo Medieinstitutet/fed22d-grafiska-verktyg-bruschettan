@@ -1,10 +1,19 @@
 @use 'variables' as var;
 
+.hidden {
+   display: none;
+}
+
 nav {
+    top: 0;
     display: flex;
+    background-color: rgba($color: #000000, $alpha: 0.8);
     flex-direction: column;
+    z-index: 2;
+    position: fixed;
     justify-content: center;
     height: 100vh;
+    width: 100vw;
 
     .menu-container {
         display: flex;
@@ -13,4 +22,11 @@ nav {
         align-items: center;
         justify-content: space-between;
     }
+}
+
+.menu-button-container {
+    position: fixed;
+    z-index: 3;
+    top: 1rem;
+    right: 1rem;
 }

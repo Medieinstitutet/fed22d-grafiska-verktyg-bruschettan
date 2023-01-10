@@ -1,6 +1,7 @@
 const menuBtn = document.querySelector('#menu-button');
+const menuNav = document.querySelector('.menu-nav');
 
 const menuToggle = () => {
-  console.log('hey');
+  menuNav.classList.toggle('hidden');
 };
 menuBtn.addEventListener('click', menuToggle);
