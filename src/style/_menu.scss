@@ -32,6 +32,50 @@ nav {
 .menu-button-container {
     position: fixed;
     z-index: 3;
-    top: 1rem;
-    right: 1rem;
+    top: 2rem;
+    right: 2rem; 
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+    background-color: aliceblue; //for development
+
+
+    .menu-btn-stripes span {
+       width: 50px;
+       height: 6px;
+       background: var.$primaryColor;  
+       border: 1px solid black; 
+       position: absolute; 
+       top: 1rem;
+
+       &:nth-child(2) { //top stripe
+            top: 0;
+            }
+
+       &:nth-child(3) { //bottom stripe
+           bottom: 0;
+           transform: translateY(16px);
+            }
+
+    //    &:after {
+    //       content: '';
+    //       width: 50px;
+    //       height: 6px;
+    //       background: var.$primaryColor; 
+    //       border: 1px solid black; 
+    //       position: absolute;
+    //       transition: all 0.5s ease-in-out;
+    //    }
+
+    //    &:before {
+    //     transform: translateY(-16px);
+    //     top: 0;
+    //    }
+
+    //    &:after {
+    //     transform: translateY(16px);
+    //     bottom: 0;
+    //    }
+
+    }
 }
