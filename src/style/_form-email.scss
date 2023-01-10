@@ -53,3 +53,26 @@
     }
 }
 
+@media only screen and (min-width: 1025px){
+    .subscribe-newsletter {
+        width: 60vw;
+        max-width: 700px;
+        min-width: 600px;
+        border: var.$primaryColor solid 1px;
+        position: absolute;
+        left: 37vw;
+        h2 {
+            width: 100%;
+
+            margin: {
+                left: 2px;
+            }
+        }
+        form {
+            input {
+                width: 30vw;
+            }
+        }
+    }
+}
+
