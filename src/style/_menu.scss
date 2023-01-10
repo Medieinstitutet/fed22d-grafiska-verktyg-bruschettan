@@ -1,7 +1,7 @@
 @use 'variables' as var;
 
 .hidden {
-   display: none;
+   visibility: hidden;
 }
 
 nav {
@@ -25,6 +25,12 @@ nav {
         a {
             color: var.$primaryColor;
             font-size: 2.6rem;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                text-shadow: 0px 0px 4px rgba(214, 171, 54, 0.25);
+            }
         }
     }
 }
@@ -37,14 +43,11 @@ nav {
     cursor: pointer;
     width: 50px;
     height: 40px;
-    background-color: aliceblue; //for development
-
 
     .menu-btn-stripes span {
        width: 50px;
        height: 6px;
        background: var.$primaryColor;  
-       border: 1px solid black; 
        position: absolute; 
        top: 1rem;
 
@@ -56,26 +59,5 @@ nav {
            bottom: 0;
            transform: translateY(16px);
             }
-
-    //    &:after {
-    //       content: '';
-    //       width: 50px;
-    //       height: 6px;
-    //       background: var.$primaryColor; 
-    //       border: 1px solid black; 
-    //       position: absolute;
-    //       transition: all 0.5s ease-in-out;
-    //    }
-
-    //    &:before {
-    //     transform: translateY(-16px);
-    //     top: 0;
-    //    }
-
-    //    &:after {
-    //     transform: translateY(16px);
-    //     bottom: 0;
-    //    }
-
     }
 }
