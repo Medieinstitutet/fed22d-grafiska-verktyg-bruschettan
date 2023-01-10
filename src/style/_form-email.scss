@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+.subscribe-newsletter{
+    display: none;
+}
+
 @media only screen and (min-width: 768px){
     
     .subscribe-newsletter {
+        display: block;
         width: 95vw;
         height: 160px;
         border: var.$primaryColor solid 1px;
