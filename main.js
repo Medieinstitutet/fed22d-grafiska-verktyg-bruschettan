@@ -19,28 +19,33 @@ const cards = [{
 const cardsHolder = document.querySelector('#cards-holder');
 let cardsHtml = '';
 let mobileSwipeHtml = '';
+let swiper = '';
+let swiper2 = '';
 
-cards.forEach((card) => {
-  cardsHtml += `
-  <div class="card">
-    <h3>${card.name}</h3>
-
-    <div class="swiper mySwiper1">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="/assets/${card.img1}"></div>
-        <div class="swiper-slide"><img src="/assets/${card.img2}"></div>
+function createCards() {
+  cards.forEach((card) => {
+    cardsHtml += `
+    <div class="card">
+      <h3>${card.name}</h3>
+  
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/assets/${card.img1}"></div>
+          <div class="swiper-slide"><img src="/assets/${card.img2}"></div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
+  
+      <p>${card.description}</p>
+      
+      <button>Order</button>
+    </div>`;
+  });
+}
 
-    <p>${card.description}</p>
-    
-    <button>Order</button>
-  </div>`;
-});
+createCards();
 
 cardsHolder.innerHTML = cardsHtml;
-
 const cardsArray = document.querySelectorAll('.card');
 
 cardsArray.forEach((card) => {
@@ -49,7 +54,6 @@ cardsArray.forEach((card) => {
   `;
 });
 
-// lägga i typ if screen with ..... som triggar createMobileSwipe
 function createMobileSwipe() {
   cardsHolder.innerHTML = `
   <div class="swiper mySwiper2">
@@ -61,21 +65,37 @@ function createMobileSwipe() {
     </div>`;
 }
 
-createMobileSwipe();
-// eslint-disable-next-line no-unused-vars, no-undef
-const swiper = new Swiper('.mySwiper1', {
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  // autoplay: {
-  //   delay: 5000,
-  // },
-});
 
-const swiper2 = new Swiper('.mySwiper2', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+function createSwipers() {
+  // eslint-disable-next-line no-unused-vars, no-undef
+  const swiper = new Swiper('.mySwiper1', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  });
+
+  const swiper2 = new Swiper('.mySwiper2', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+}
+
+function screenSizeMobile() {
+  if (window.innerWidth < 480) {
+    createMobileSwipe();
+    createSwipers();
+  } else {
+    cardsHolder.innerHTML = cardsHtml;
+    createSwipers();
+  }
+}
+
+screenSizeMobile();
+
+window.addEventListener('resize', screenSizeMobile);
