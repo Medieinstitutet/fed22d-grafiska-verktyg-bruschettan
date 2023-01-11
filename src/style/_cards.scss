@@ -20,6 +20,7 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .swiper-slide img {
@@ -28,3 +29,8 @@
   height: 100%;
   object-fit: cover;
 }
+
+// .card{
+//   display: flex;
+//   flex-direction: column;
+// }
