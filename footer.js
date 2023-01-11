@@ -6,4 +6,4 @@ findUs.classList.add('hidden-footer');
 quickLinks.classList.add('hidden-footer');
 title.classList.add('hidden-footer');
 
-//ändra class i html ist och bytt i media query
+// ändra class i html ist och bytt i media query
