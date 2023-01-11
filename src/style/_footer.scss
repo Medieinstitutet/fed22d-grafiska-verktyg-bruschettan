@@ -3,7 +3,7 @@
 ========================================================================== */
 @use 'variables' as var;
 
-.find-us-container, .quick-links-container, .title-container {
+.find-us-container, .quick-links-container, .title-container, .hidden-h3-mobile {
    display: none; //will not exist on mobile version
 }
 
@@ -53,5 +53,33 @@ footer {
 ========================================================================== */
 
 @media only screen and (min-width: 1201px) {
-   
+   footer {
+    height: 360px;
+
+        .footer-content-container{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-direction: row;
+
+            .find-us-container, .follow-us-container, .quick-links-container, .title-container {
+                display: flex;
+                flex-direction: column;
+                width: 25%;
+
+                .hidden-h3-mobile {
+                    display: block;
+                }
+                .icon-mobile-list {
+                    display: flex;
+                    flex-direction: column;
+                    list-style-type: none;
+                    justify-content: space-around;
+                    width: auto;
+                    padding: 1rem 0 1rem 0;
+                    max-width: 100%; //to prevent overflow
+                }
+            }
+        }
+   }
   }
