@@ -33,6 +33,10 @@ footer {
                 width: 75vw;
                 padding: 1rem 0 1rem 0;
                 max-width: 100%; //to prevent overflow
+
+                a {
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -47,3 +51,7 @@ footer {
 /* ==========================================================================
    Media query rules for footer
 ========================================================================== */
+
+@media only screen and (min-width: 1201px) {
+   
+  }
