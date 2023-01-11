@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Footer 
+========================================================================== */
+@use 'variables' as var;
+
+.hidden-footer {
+   visibility: hidden;
+}
+.footer-content-container{
+    display: flex;
+    height: 120px;
+    background-color: var.$sencondaryBlue;
+    justify-content: center;
+    align-items: center;
+
+    .follow-us-container {
+        display: flex;
+        height: 120px;
+        background-color: var.$sencondaryBlue;
+        justify-content: center;
+        align-items: center;
+    
+        .icon-mobile-list {
+            display: flex;
+            width: 70vw;
+            list-style-type: none;
+            justify-content: space-around;
+        }
+    }
+}
+
+/* ==========================================================================
+   Media query rules for footer
+========================================================================== */
