@@ -19,13 +19,40 @@ header{
         justify-content: center;
     }
 
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     h1{
         color: var.$primaryColor;
-        font-size: 72px;
+        font-size: 2.3rem;
+        margin-bottom: 0;
     }
 
     h2, h3{
         color: var.$secondaryYellow;
+    }
+
+    h3{
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 1.2rem;
+        font-size: 18px;
+    }
+
+    p{
+        max-width: 85%;
+        margin-bottom: 5rem;
+    }
+
+    button.readMore-btn{
+       /* padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem; */
+        font-size: 30px;
     }
 
 }
