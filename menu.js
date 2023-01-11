@@ -18,9 +18,13 @@ const menuToggle = () => {
   if (!menuNav.classList.contains('hidden-menu')) {
     gsap.fromTo(
       '.menu-nav',
-      { yPercent: -100 },
+      {
+        yPercent: -100,
+        opacity: 0.2,
+      },
       {
         yPercent: 0,
+        opacity: 1,
         ease: 'power1',
       },
     );
