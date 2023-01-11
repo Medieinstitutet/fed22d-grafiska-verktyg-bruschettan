@@ -3,7 +3,7 @@
 ========================================================================== */
 @use 'variables' as var;
 
-.hidden-footer {
+.find-us-container, .quick-links-container, .title-container {
    display: none; //will not exist on mobile version
 }
 
