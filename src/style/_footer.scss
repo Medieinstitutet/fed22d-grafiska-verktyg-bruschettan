@@ -4,30 +4,45 @@
 @use 'variables' as var;
 
 .hidden-footer {
-   visibility: hidden;
+   display: none; //will not exist on mobile version
 }
-.footer-content-container{
-    display: flex;
+
+footer {
     height: 120px;
+    width: 100vw;
+    max-width: 100%; //to prevent overflow
+    position: absolute;
+    bottom: 0;
     background-color: var.$sencondaryBlue;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 
-    .follow-us-container {
+    .footer-content-container{
         display: flex;
-        height: 120px;
-        background-color: var.$sencondaryBlue;
-        justify-content: center;
         align-items: center;
     
-        .icon-mobile-list {
+        .follow-us-container {
             display: flex;
-            width: 70vw;
-            list-style-type: none;
-            justify-content: space-around;
+            align-items: center;
+        
+            .icon-mobile-list {
+                display: flex;
+                list-style-type: none;
+                justify-content: space-around;
+                width: 75vw;
+                padding: 1rem 0 1rem 0;
+                max-width: 100%; //to prevent overflow
+            }
         }
     }
+
+    .copywright {
+        color: var.$secondaryYellow;
+        font-size: 0.75rem; //12 px
+    }
 }
+
 
 /* ==========================================================================
    Media query rules for footer
