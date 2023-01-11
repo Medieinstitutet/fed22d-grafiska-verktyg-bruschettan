@@ -51,32 +51,42 @@ footer {
 /* ==========================================================================
    Media query rules for footer
 ========================================================================== */
+//tablet
+@media only screen and (min-width: 769px) {
+    footer {
+        .copywright {
+            color: var.$secondaryYellow;
+            font-size: 1.25rem; //20 px
+        }
+    }
+   }
 
+//desktop
 @media only screen and (min-width: 1201px) {
    footer {
     height: 360px;
 
         .footer-content-container{
-            display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: flex-start;
             flex-direction: row;
 
             .find-us-container, .follow-us-container, .quick-links-container, .title-container {
                 display: flex;
+                flex: 1;
+                align-items: center;
+                max-width: 235px;
                 flex-direction: column;
-                width: 25%;
+
 
                 .hidden-h3-mobile {
                     display: block;
                 }
                 .icon-mobile-list {
-                    display: flex;
                     flex-direction: column;
-                    list-style-type: none;
                     justify-content: space-around;
                     width: auto;
-                    padding: 1rem 0 1rem 0;
+                    padding: 2rem 0 2rem 0;
                     max-width: 100%; //to prevent overflow
                 }
             }
