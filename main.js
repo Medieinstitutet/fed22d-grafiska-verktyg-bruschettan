@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow */
 /* eslint-disable no-plusplus */
 import './src/style/style.scss';
 // import { gsap } from 'gsap'; // kommentera ut detta om ni vill använda gsap
@@ -19,7 +20,9 @@ const cards = [{
 const cardsHolder = document.querySelector('#cards-holder');
 let cardsHtml = '';
 let mobileSwipeHtml = '';
+// eslint-disable-next-line prefer-const, no-unused-vars
 let swiper = '';
+// eslint-disable-next-line prefer-const, no-unused-vars
 let swiper2 = '';
 
 function createCards() {
@@ -65,9 +68,8 @@ function createMobileSwipe() {
     </div>`;
 }
 
-
 function createSwipers() {
-  // eslint-disable-next-line no-unused-vars, no-undef
+  // eslint-disable-next-line no-unused-vars, no-undef, no-shadow
   const swiper = new Swiper('.mySwiper1', {
     pagination: {
       el: '.swiper-pagination',
@@ -78,6 +80,7 @@ function createSwipers() {
     },
   });
 
+  // eslint-disable-next-line no-unused-vars, no-undef
   const swiper2 = new Swiper('.mySwiper2', {
     navigation: {
       nextEl: '.swiper-button-next',
