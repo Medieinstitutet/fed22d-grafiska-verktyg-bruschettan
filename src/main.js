@@ -1,31 +1,57 @@
+/* eslint-disable prefer-const */
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-shadow */
-/* eslint-disable no-plusplus */
-// eslint-disable-next-line import/no-unresolved
-import './style/style.scss';
-// import { gsap } from 'gsap'; // kommentera ut detta om ni vill använda gsap
+import './src/style/style.scss';
 
 const cards = [{
   name: 'FireFly 300',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
-  img1: '/img/gadget_desktop.png',
-  img2: '/img/gadget_desktop.png',
+  img1: '300_1.png',
+  img2: '300_2.png',
 },
 {
   name: 'FireFly 700',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
-  img1: '/img/gadget_desktop.png',
-  img2: '/img/gadget_desktop.png',
+  img1: '700_1.png',
+  img2: '700_2.png',
+},
+{
+  name: 'FireFly 900',
+  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
+  img1: '900_1.png',
+  img2: '900_2.png',
 },
 ];
 
 const cardsHolder = document.querySelector('#cards-holder');
 let cardsHtml = '';
 let mobileSwipeHtml = '';
-// eslint-disable-next-line prefer-const, no-unused-vars
 let swiper = '';
-// eslint-disable-next-line prefer-const, no-unused-vars
 let swiper2 = '';
 
+// funktion för att skapa två olika slideshows beroende på skärmstorlek
+function createSwipers() {
+  // den inre slidern, med klickbara prickar och autoplay
+  const swiper = new Swiper('.mySwiper1', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  });
+  // den yttre swipern, med pilar
+  const swiper2 = new Swiper('.mySwiper2', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+}
+
+// skapar html för stor skärm där inte yttre slidern är med
 function createCards() {
   cards.forEach((card) => {
     cardsHtml += `
@@ -46,10 +72,10 @@ function createCards() {
     </div>`;
   });
 }
-
 createCards();
-
 cardsHolder.innerHTML = cardsHtml;
+
+// Array med html för slides till den yttre slidern i mobilvy
 const cardsArray = document.querySelectorAll('.card');
 
 cardsArray.forEach((card) => {
@@ -58,41 +84,18 @@ cardsArray.forEach((card) => {
   `;
 });
 
-function createMobileSwipe() {
-  cardsHolder.innerHTML = `
-  <div class="swiper mySwiper2">
-      <div class="swiper-wrapper">
-      ${mobileSwipeHtml}
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>`;
-}
-
-function createSwipers() {
-  // eslint-disable-next-line no-unused-vars, no-undef, no-shadow
-  const swiper = new Swiper('.mySwiper1', {
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    autoplay: {
-      delay: 5000,
-    },
-  });
-
-  // eslint-disable-next-line no-unused-vars, no-undef
-  const swiper2 = new Swiper('.mySwiper2', {
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-}
-
-function screenSizeMobile() {
-  if (window.innerWidth < 480) {
-    createMobileSwipe();
+function createSwipe() {
+  /// obs, fel värde här pga sidescroll, fixa när vi
+  // gör slutputs
+  if (window.innerWidth < 1000) {
+    cardsHolder.innerHTML = `
+    <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+        ${mobileSwipeHtml}
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>`;
     createSwipers();
   } else {
     cardsHolder.innerHTML = cardsHtml;
@@ -100,6 +103,8 @@ function screenSizeMobile() {
   }
 }
 
-screenSizeMobile();
+createSwipe();
+createSwipers();
 
-window.addEventListener('resize', screenSizeMobile);
+// EventListener som känner av skärmbredd, för att göra sidan responsiv
+window.addEventListener('resize', createSwipe);
