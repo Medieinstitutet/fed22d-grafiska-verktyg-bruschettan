@@ -5,12 +5,12 @@ const menuBtnMiddleStripe = document.querySelector('.menu-btn-stripes span:nth-c
 const menuBtnTopStripe = document.querySelector('.menu-btn-stripes span:nth-child(2)');
 const menuBtnBottomStripe = document.querySelector('.menu-btn-stripes span:nth-child(3)');
 const menuNav = document.querySelector('.menu-nav');
-// const menuTl = new gsap.timeline({ repeat: 0, repeatDelay: 0 }); // for infinite repeat add -1
 
+// load page with hidden menu
 menuNav.classList.toggle('hidden-menu');
 
 /**
- * Menu toggle for mobile/tablet
+ * Menu toggle for all devices
  */
 
 const menuToggle = () => {
