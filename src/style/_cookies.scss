@@ -1,0 +1,31 @@
+@use 'variables' as var;
+
+
+    .cookies{
+    height: 60px;
+    background-color: var.$sencondaryBlue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .cookies-text{
+        font-size: 0.6rem;
+        margin-left: 10px;
+    }
+
+    .cookies-btn{
+        height: 35px;
+        width: 50px;
+        font-size: 0.6rem;
+        
+        padding: {
+            left: 5px;
+            
+        }
+    }
+    }
+
+
+
+
+
