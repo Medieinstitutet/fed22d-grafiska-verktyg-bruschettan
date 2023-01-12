@@ -2,7 +2,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-shadow */
-import '/src/style/style.scss';
+import './style/style.scss';
 
 const cards = [{
   name: 'FireFly 300',
@@ -60,8 +60,8 @@ function createCards() {
   
       <div class="swiper mySwiper1">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="../img/${card.img1}"></div>
-          <div class="swiper-slide"><img src="../img/${card.img2}"></div>
+          <div class="swiper-slide"><img src="img/${card.img1}"></div>
+          <div class="swiper-slide"><img src="img/${card.img2}"></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
