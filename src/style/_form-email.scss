@@ -12,7 +12,6 @@
     
     .subscribe-newsletter {
         display: block;
-        /*width: 759px;*/
         width: 42em;
         height: 160px;
         border: var.$primaryColor solid 1px;
@@ -59,12 +58,15 @@
 
 @media only screen and (min-width: 1200px){
     .subscribe-newsletter {
-        width: 750px;
         height: 147px;
         border: var.$primaryColor solid 1px;
+        position: absolute;
+        top: 39em;
+        right: 1em;
         h2 {
             text-align: start;
             width: 100%;
+            font-size: 26px;
 
             margin: {
                 left: 10px;
@@ -75,6 +77,8 @@
         form {
             input {
                 width: 400px;
+                color: white;
+                font-family: var.$prostoOne;
             }
         }
     }
