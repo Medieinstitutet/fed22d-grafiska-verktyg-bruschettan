@@ -4,8 +4,8 @@
   
       <div class="swiper mySwiper1">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/${u.img1}"></div>
-          <div class="swiper-slide"><img src="img/${u.img2}"></div>
+          <div class="swiper-slide"><img src="/img/${u.img1}"></div>
+          <div class="swiper-slide"><img src="/img/${u.img2}"></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
