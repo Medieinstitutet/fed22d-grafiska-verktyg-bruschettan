@@ -40,6 +40,19 @@
     overflow: unset;
 }
 
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 header{
     margin-top: 5rem;
 
@@ -95,7 +108,8 @@ header{
     }
 
     p{
-        max-width: 85%;
+        max-width: 80%;
+        margin: 0 auto;
         margin-top: 4rem;
         margin-bottom: 6rem;
     }
@@ -138,7 +152,7 @@ header{
 
 @media screen and (min-width: 1200px) {
     header{
-        margin-top: 8rem;
+        margin-top: 10rem;
 
         .header-flexbox{
             flex-direction: row-reverse;
@@ -155,7 +169,30 @@ header{
             padding-right: 1.5rem;
             padding-top: 12px;
             padding-bottom: 12px;
-            margin-right: 3em;
+            margin-right: 9em;
+        }
+
+        p{
+            margin-right: 1em;
+        }
+    }
+}
+
+@media screen and (min-width: 1400px){
+    header{
+        max-width: 80%;
+        margin: 0 auto;
+
+        .header-flexbox{
+            margin-top: 10rem;
+        }
+    
+        .header-container{
+            margin-right: 5em;
+        }
+    
+        p{
+            margin-right: 9em;
         }
     }
 }
