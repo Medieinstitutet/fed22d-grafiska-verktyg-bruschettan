@@ -13,8 +13,8 @@ const cards = [{
 {
   name: 'FireFly 700',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
-  img1: 'gadget_desktop.png',
-  img2: 'gadget_desktop.png',
+  img1: '700_1.png',
+  img2: '700_2.png',
 },
 {
   name: 'FireFly 900',
