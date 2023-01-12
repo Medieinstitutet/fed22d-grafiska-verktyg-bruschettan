@@ -2,7 +2,7 @@
 
 
     .cookies{
-    height: 60px;
+    height: 70px;
     background-color: var.$sencondaryBlue;
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,8 @@
 
     @media only screen and (min-width: 345px){
         .cookies{
-    
+            height: 80px;
+
             .cookies-text{
                 font-size: 0.7rem;
             }
@@ -45,11 +46,13 @@
             }
     }
 
-    @media only screen and (min-width: 500px){
+    @media only screen and (min-width: 520px){
         .cookies{
-    
+            height: 90px;
+
             .cookies-text{
                 font-size: 1rem;
+                margin-left: 20px
             }
         
             .cookies-btn{
@@ -67,9 +70,11 @@
 
     @media only screen and (min-width: 800px){
         .cookies{
+            height: 100px;
     
             .cookies-text{
                 font-size: 1.2rem;
+                margin-left: 30px;
             }
         
             .cookies-btn{
