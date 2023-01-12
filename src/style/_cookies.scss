@@ -25,7 +25,24 @@
     }
     }
 
-
+    @media only screen and (min-width: 322px){
+        .cookies{
+    
+            .cookies-text{
+                font-size: 0.7rem;
+            }
+        
+            .cookies-btn{
+                height: 35px;
+                width: 60px;
+                font-size: 0.7rem;
+                
+                padding: {
+                    left: 7px;
+                }
+            }
+            }
+    }
 
 
 
