@@ -2,9 +2,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-shadow */
-/* eslint-disable no-plusplus */
 import './src/style/style.scss';
-// import { gsap } from 'gsap'; // kommentera ut detta om ni vill använda gsap
 
 const cards = [{
   name: 'FireFly 300',
@@ -21,8 +19,8 @@ const cards = [{
 {
   name: 'FireFly 900',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
-  img1: 'gadget_desktop.png',
-  img2: 'gadget_desktop.png',
+  img1: '900_1.png',
+  img2: '900_2.png',
 },
 ];
 
