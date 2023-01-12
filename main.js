@@ -7,8 +7,8 @@ import './src/style/style.scss';
 const cards = [{
   name: 'FireFly 300',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
-  img1: 'gadget_desktop.png',
-  img2: 'gadget_desktop.png',
+  img1: '300_1.png',
+  img2: '300_2.png',
 },
 {
   name: 'FireFly 700',
