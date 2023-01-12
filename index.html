@@ -32,13 +32,15 @@
 
     <header>
       <div class="header-flexbox">
-        <picture>
-          <source media="(max-witdh: 480px)" srcset="/assets/gadget_mobile.png" />
-          <source media="(min-width: 481px) and (max-width: 600px)" srcset="/assets/gadget_smallerTablet.png" />
-          <source media="(min-width: 601px) and (max-width: 1199px)" srcset="/assets/gadget_tablet.png" />
-          <source media="(min-width: 1200px)" srcset="/assets/desktop.png" />
-          <img src="/assets/gadget_mobile.png" loading="lazy" alt="motherboard with processor"/>
-        </picture>
+        <div class="picture">
+          <picture>
+            <source media="(max-witdh: 480px)" srcset="/assets/gadget_mobile.png" />
+            <source media="(min-width: 601px) and (max-width: 1199px)" srcset="/assets/gadget_tablet.png" />
+            <source media="(min-width: 1200px)" srcset="/assets/desktop.png" />
+            <img src="/assets/gadget_mobile.png" loading="lazy" alt="motherboard with processor"/>
+          </picture>
+        </div>
+        
        <div class="header-container">
           <div class="firefly-container">
             <img src="/assets/firefly-logo-notext.svg" id="firefly">
@@ -60,7 +62,6 @@
           <button class="learnMore-btn">Learn more</button>
         </div>
       </div>
-      <!--<div class="subscribe-container">-->
       <div class="subscribe-newsletter">
           <h2>Subscribe To Our News Letter!</h2>
           <form>

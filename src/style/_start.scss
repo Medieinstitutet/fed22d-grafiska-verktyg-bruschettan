@@ -158,11 +158,16 @@ header{
 
         .header-flexbox{
             flex-direction: row-reverse;
+            position: relative;
+        }
+
+        img{
+            margin-right: 3rem;
         }
 
         .header-container{
-            display: flex;
-            flex-direction: column;
+            position: absolute;
+            left: -40em;
         }
 
         button.learnMore-btn{
@@ -175,8 +180,8 @@ header{
         }
 
         p{
-            max-width: 50%;
-            margin-right: 12em;
+            max-width: 15%;
+            margin-right: 53em;
             margin-bottom: 3rem;
         }
     }
@@ -189,6 +194,15 @@ header{
 
         .header-flexbox{
             margin-top: 10rem;
+            margin-bottom: 15rem;
+        }
+
+        .header-container{
+            top: -2em;
+        }
+
+        img{
+            margin-right: 0;
         }
     }
 }
