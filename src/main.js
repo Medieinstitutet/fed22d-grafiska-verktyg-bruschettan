@@ -1,19 +1,20 @@
 /* eslint-disable no-shadow */
 /* eslint-disable no-plusplus */
-import './src/style/style.scss';
+// eslint-disable-next-line import/no-unresolved
+import './style/style.scss';
 // import { gsap } from 'gsap'; // kommentera ut detta om ni vill använda gsap
 
 const cards = [{
   name: 'FireFly 300',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
-  img1: 'gadget_desktop.png',
-  img2: 'gadget_desktop.png',
+  img1: '/public/img/gadget_desktop.png',
+  img2: '/public/img/gadget_desktop.png',
 },
 {
   name: 'FireFly 700',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
-  img1: 'gadget_desktop.png',
-  img2: 'gadget_desktop.png',
+  img1: '/public/img/gadget_desktop.png',
+  img2: '/public/img/gadget_desktop.png',
 },
 ];
 
@@ -33,8 +34,8 @@ function createCards() {
   
       <div class="swiper mySwiper1">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="/assets/${card.img1}"></div>
-          <div class="swiper-slide"><img src="/assets/${card.img2}"></div>
+          <div class="swiper-slide"><img src="${card.img1}"></div>
+          <div class="swiper-slide"><img src="${card.img2}"></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
