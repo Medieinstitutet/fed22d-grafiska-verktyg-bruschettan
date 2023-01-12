@@ -30,7 +30,7 @@ let mobileSwipeHtml = '';
 let swiper = '';
 let swiper2 = '';
 
-// funktion för att skapa två olika slideshows
+// funktion för att skapa två olika slideshows beroende på skärmstorlek
 function createSwipers() {
   // den inre slidern, med klickbara prickar och autoplay
   const swiper = new Swiper('.mySwiper1', {
