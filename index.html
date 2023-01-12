@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/bae5c522cf.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    
     <title>Document</title>
   </head>
   <body>
@@ -21,7 +23,7 @@
       </div>
     </nav>
 
-    <div class ="menu-button-container">
+    <div class="menu-button-container">
       <div id="menu-button" class="menu-btn-stripes" aria-label="Open/Close the menu">
         <span></span>
         <span></span>
@@ -32,6 +34,7 @@
 
     <header>
       <h1>Quant Firefly</h1>
+      <img src="/img/900_1.png"></div>
       <h3>First Quantum Processor</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi
@@ -51,7 +54,8 @@
     </header>
     <section class="products">
       <h2>Which FireFly are you?</h2>
-      <!-- Should we add the cards with js? -->
+      <hr />
+      <div id="cards-holder"></div>
     </section>
     <footer>
       <div class="footer-content-container">
@@ -105,10 +109,9 @@
       <button>Decline</button>
       <button>Accept</button>
     </section>
-    <script src="main.js" type="module"></script>
-    <script src="menu.js" type="module"></script>
-    <script src="footer.js" type="module"></script>
-    <script src="subscribe-newsletter.js" type="module" ></script>
-    <!-- länka till script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/src/main.js" type="module"></script>
+    <script src="/src/menu.js" type="module"></script>
+    <script src="/src/subscribe-newsletter.js" type="module"></script>
   </body>
 </html>
