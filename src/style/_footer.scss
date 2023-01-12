@@ -8,7 +8,7 @@
 }
 
 footer {
-    height: 120px;
+    height: 125px;
     width: 100vw;
     max-width: 100%; //to prevent overflow
     // position: absolute;
@@ -54,6 +54,8 @@ footer {
 //tablet
 @media only screen and (min-width: 769px) {
     footer {
+        height: 150px;
+
         .copywright {
             color: var.$secondaryYellow;
             font-size: 1.25rem; //20 px
@@ -67,26 +69,34 @@ footer {
     height: 360px;
 
         .footer-content-container{
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: flex-start;
+            width: 100%;
+            max-width: 1700px;
+            margin: 1rem;
             flex-direction: row;
 
             .find-us-container, .follow-us-container, .quick-links-container, .title-container {
                 display: flex;
                 flex: 1;
                 align-items: center;
-                max-width: 235px;
+                width: auto;
+                max-width: 185px;
                 flex-direction: column;
 
+                ul {
+                    list-style-type: none;
+                }
 
                 .hidden-h3-mobile {
                     display: block;
                 }
                 .icon-mobile-list {
                     flex-direction: column;
-                    justify-content: space-around;
+                    align-items: center;
+                    gap: 1rem;
                     width: auto;
-                    padding: 2rem 0 2rem 0;
+                    padding: 0;
                     max-width: 100%; //to prevent overflow
                 }
             }
