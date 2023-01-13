@@ -39,7 +39,7 @@ function createSwipers() {
       clickable: true,
     },
     autoplay: {
-      delay: 5000,
+      delay: 3000,
     },
   });
   // den yttre swipern, med pilar
@@ -56,7 +56,7 @@ function createCards() {
   cards.forEach((card) => {
     cardsHtml += `
     <div class="card">
-      <h3>${card.name}</h3>
+      <h3 class="product-name">${card.name}</h3>
   
       <div class="swiper mySwiper1">
         <div class="swiper-wrapper">
@@ -66,9 +66,9 @@ function createCards() {
         <div class="swiper-pagination"></div>
       </div>
   
-      <p>${card.description}</p>
+      <p class="card-description">${card.description}<a> <img src="img/arrow_next.png" alt="link to description" loading="lazy"></a></p>
       
-      <button>Order</button>
+      <button class="order-btn">Order</button>
     </div>`;
   });
 }
@@ -87,7 +87,7 @@ cardsArray.forEach((card) => {
 function createSwipe() {
   /// obs, fel värde här pga sidescroll, fixa när vi
   // gör slutputs
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 551) {
     cardsHolder.innerHTML = `
     <div class="swiper mySwiper2">
         <div class="swiper-wrapper">
