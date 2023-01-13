@@ -61,6 +61,7 @@
   h2{
     color: var.$primaryColor;
     margin-bottom: 35px;
+    margin-top: 70px;
   }
 
   h3{
@@ -177,6 +178,7 @@
     .cards-holder{
       display: flex;
       flex-direction: row;
+      max-width: 1440px;
 
       .card{
         height: 460px;

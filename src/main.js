@@ -39,7 +39,7 @@ function createSwipers() {
       clickable: true,
     },
     autoplay: {
-      delay: 5000,
+      delay: 3000,
     },
   });
   // den yttre swipern, med pilar
