@@ -172,3 +172,54 @@
       }
     }
   }
+
+  @media only screen and (min-width: 1100px){
+    .cards-holder{
+      display: flex;
+      flex-direction: row;
+
+      .card{
+        height: 460px;
+        width: 368px;
+        grid-template-columns: 322px;
+        grid-template-rows: 200px auto auto;
+        grid-template-areas: 
+        "swiper"
+        "name"
+        "description";
+
+        h3{
+          text-align: center;
+          margin-top: 35px;
+        }
+
+        p{
+          margin-left: 40px;
+          a{
+            display: none;
+          }
+        }
+
+        .swiper-wrapper{
+          margin-left:40px;
+          margin-top: 50px;
+          
+          img{
+            width: 250px;
+            bottom: 0;
+            object-fit: cover;
+          }
+        }
+        .swiper-pagination-bullet{
+          bottom: 0px;
+          top: 10px;
+          right: -10px;
+        }
+        button{
+          display: block;
+          margin-top: 50px;
+          margin-left: 65px;
+        }
+      }
+    }
+  }
