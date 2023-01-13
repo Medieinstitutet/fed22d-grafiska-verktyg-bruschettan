@@ -73,6 +73,9 @@
     text-align: left;
     margin-top: 0;
     margin-bottom: 35px;
+    a{
+      display: none;
+    }
   }
 
   img{
@@ -92,3 +95,80 @@
     font-size: 1.75rem;
   }
 }
+
+@media only screen and (min-width: 551px){
+  .products{
+    h2{
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+    hr{
+      display: none;
+    }
+    
+    .card{
+      border: 1px solid var.$primaryColor;
+      height: 215px;
+      width: 550px;
+      border-radius: 15px;
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 3rem auto;
+      grid-template-areas: 
+      "name name"
+      "description swiper";
+      margin: 0 auto;
+      margin-bottom: 70px;
+      margin-top: 0;
+  
+      h3{
+        font-size: 2.25rem;
+        grid-area: name;
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 15px;
+      }
+
+      p{
+        grid-area: description;
+        margin-top: 15px;
+        a{
+          display: block;
+          width: 1.7rem;
+          position: relative;
+          left: 100px;
+          bottom: 15px;
+          transition: left 0.3s;
+
+          &:hover{
+            left: 110px;
+          }
+        }
+      }
+
+      .swiper-wrapper{
+        grid-area: swiper;
+        margin-top: 0px;
+        height: 100%;
+
+        img{
+          width: 170px;
+          position: relative;
+          bottom: 55px;
+          right: 30px;
+        }
+      }
+      .swiper-pagination-bullet{
+        position: relative;
+        font-size: 3rem;
+        bottom: 80px;
+        right: 25px;
+      }
+    }
+  
+      button{
+        display: none;
+      }
+    }
+  }
