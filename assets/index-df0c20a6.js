@@ -1,6 +1,6 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))i(r);new MutationObserver(r=>{for(const n of r)if(n.type==="childList")for(const s of n.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&i(s)}).observe(document,{childList:!0,subtree:!0});function e(r){const n={};return r.integrity&&(n.integrity=r.integrity),r.referrerpolicy&&(n.referrerPolicy=r.referrerpolicy),r.crossorigin==="use-credentials"?n.credentials="include":r.crossorigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function i(r){if(r.ep)return;r.ep=!0;const n=e(r);fetch(r.href,n)}})();const Xr=[{name:"FireFly 300",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.",img1:"300_1.png",img2:"300_2.png"},{name:"FireFly 700",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.",img1:"700_1.png",img2:"700_2.png"},{name:"FireFly 900",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.",img1:"900_1.png",img2:"900_2.png"}],qe=document.querySelector("#cards-holder");let ni="",Yi="";function Ve(){new Swiper(".mySwiper1",{pagination:{el:".swiper-pagination",clickable:!0},autoplay:{delay:5e3}}),new Swiper(".mySwiper2",{navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}})}function Wr(){Xr.forEach(u=>{ni+=`
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))i(r);new MutationObserver(r=>{for(const n of r)if(n.type==="childList")for(const s of n.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&i(s)}).observe(document,{childList:!0,subtree:!0});function e(r){const n={};return r.integrity&&(n.integrity=r.integrity),r.referrerpolicy&&(n.referrerPolicy=r.referrerpolicy),r.crossorigin==="use-credentials"?n.credentials="include":r.crossorigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function i(r){if(r.ep)return;r.ep=!0;const n=e(r);fetch(r.href,n)}})();const Xr=[{name:"FireFly 300",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.",img1:"300_1.png",img2:"300_2.png"},{name:"FireFly 700",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.",img1:"700_1.png",img2:"700_2.png"},{name:"FireFly 900",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.",img1:"900_1.png",img2:"900_2.png"}],qe=document.querySelector("#cards-holder");let ni="",Yi="";function Ve(){new Swiper(".mySwiper1",{pagination:{el:".swiper-pagination",clickable:!0},autoplay:{delay:3e3}}),new Swiper(".mySwiper2",{navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}})}function Wr(){Xr.forEach(u=>{ni+=`
     <div class="card">
-      <h3>${u.name}</h3>
+      <h3 class="product-name">${u.name}</h3>
   
       <div class="swiper mySwiper1">
         <div class="swiper-wrapper">
@@ -10,12 +10,12 @@
         <div class="swiper-pagination"></div>
       </div>
   
-      <p>${u.description}</p>
+      <p class="card-description">${u.description}<a> <img src="img/arrow_next.png" alt="link to description" loading="lazy"></a></p>
       
-      <button>Order</button>
+      <button class="order-btn">Order</button>
     </div>`})}Wr();qe.innerHTML=ni;const Gr=document.querySelectorAll(".card");Gr.forEach(u=>{Yi+=`
   <div class="swiper-slide">${u.innerHTML}</div>
-  `});function Xi(){window.innerWidth<1e3?(qe.innerHTML=`
+  `});function Xi(){window.innerWidth<551?(qe.innerHTML=`
     <div class="swiper mySwiper2">
         <div class="swiper-wrapper">
         ${Yi}
