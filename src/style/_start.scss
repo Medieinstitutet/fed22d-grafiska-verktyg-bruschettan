@@ -13,34 +13,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*Ta bort mixins om learn more ska visas hela tiden*/
-@mixin visually-hidden{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-@mixin removeVisuallyHidden{
-    position: unset;
-    width: unset;
-    height: unset;
-    margin: unset;
-    border: unset;
-    padding: unset;
-  
-    white-space: unset;
-    clip-path: unset;
-    clip: unset;
-    overflow: unset;
-}
-
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -54,11 +26,11 @@
     overflow: hidden;
 }
 
-header{
+section.start-page{
     margin-top: 5rem;
     margin-bottom: 10rem;
 
-    .header-flexbox{
+    .startpage-flexbox{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -70,11 +42,11 @@ header{
         margin-bottom: 2em;
     }
 
-    .header-container{
+    .startpage-container{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        max-width: 90%;
     }
 
     .firefly-container{
@@ -110,7 +82,7 @@ header{
     }
 
     p{
-        max-width: 80%;
+        max-width: 60%;
         margin: 0 auto;
         margin-top: 4rem;
         margin-bottom: 6rem;
@@ -127,7 +99,7 @@ header{
 }
 
 @media screen and (min-width: 350px) {
-    header{
+    section.start-page{
         #firefly{
             align-self: center;
             height: 6em;
@@ -141,7 +113,7 @@ header{
 }
 
 @media screen and (min-width: 768px) {
-    header{
+    section.start-page{
         margin-top: 3.5rem;
 
         #firefly{
@@ -156,21 +128,26 @@ header{
         }
 
         h3{
-            top: 5.3rem;
-            left: -3px;
+            top: 6rem;
+            left: 5px;
         }
 
         p{
             max-width: 60%;
         }
+
+        button.learnMore-btn{
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
     }
 }
 
 @media screen and (min-width: 1200px) {
-    header{
+    section.start-page{
         margin-top: 10rem;
 
-        .header-flexbox{
+        .startpage-flexbox{
             flex-direction: row-reverse;
             position: relative;
         }
@@ -179,45 +156,45 @@ header{
             margin-right: 3rem;
         }
 
-        .header-container{
-            position: absolute;
-            left: -40em;
+        .startpage-container{
+            max-width: unset;
+            margin-left: 4em;
         }
 
         button.learnMore-btn{
             font-size: 20px;
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-            padding-top: 12px;
-            padding-bottom: 12px;
+            padding-left: 1.8rem;
+            padding-right: 1.8rem;
+            padding-top: 14px;
+            padding-bottom: 14px;
             margin-right: 10em;
         }
 
         p{
-            max-width: 15%;
-            margin-right: 53em;
+            max-width: 50%;
+            margin-right: 12em;
             margin-bottom: 3rem;
         }
     }
 }
 
 @media screen and (min-width: 1400px){
-    header{
+    section.start-page{
         max-width: 80%;
         margin: 0 auto;
 
-        .header-flexbox{
+        .startpage-flexbox{
             margin-top: 10rem;
             margin-bottom: 15rem;
         }
 
-        .header-container{
-            top: -2em;
-            left: -49em;
+        .startpage-container{
+          margin-left: unset;
         }
 
         img{
             margin-right: 0.5em;
+            margin-bottom: 4em;
         }
     }
 }
