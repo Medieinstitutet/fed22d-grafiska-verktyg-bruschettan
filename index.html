@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-    <title>Document</title>
-    <script type="module" crossorigin src="/fed22d-grafiska-verktyg-bruschettan/assets/index-55fccad8.js"></script>
-    <link rel="stylesheet" href="/fed22d-grafiska-verktyg-bruschettan/assets/index-9ff2786f.css">
+    <title>Quant FireFly</title>
+    <script type="module" crossorigin src="/fed22d-grafiska-verktyg-bruschettan/assets/index-43459801.js"></script>
+    <link rel="stylesheet" href="/fed22d-grafiska-verktyg-bruschettan/assets/index-aa274dcd.css">
   </head>
   <body>
     <!--Gör om till ul-li?-->
@@ -34,25 +34,45 @@
       <!-- <i class="fa-solid fa-x"></i> -->
     </div>
 
-    <header>
-      <h1>Quant Firefly</h1>
-      <h3>First Quantum Processor</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi
-        repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
-        praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure
-        eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!
-      </p>
-      <!-- Add image of processor and firefly -->
-      <button>Knapp</button>
-      <div class="subscribe-newsletter">
-        <h2>Subscribe To Our News Letter!</h2>
-        <form>
-          <input id="email" type="text" placeholder="E-Mail" />
-          <button id="submitBtn" disabled class="disabledBtn">Submit</button>
-        </form>
+    <section class="start-page"> <!--Byt till en section-->
+      <div class="startpage-flexbox">
+        <div class="picture">
+          <picture>
+            <source media="(max-witdh: 480px)" srcset="/fed22d-grafiska-verktyg-bruschettan/assets/gadget_mobile-e829414b.png " />
+            <source media="(min-width: 601px) and (max-width: 1199px)" srcset="/fed22d-grafiska-verktyg-bruschettan/assets/gadget_tablet-6b7265c3.png " />
+            <source media="(min-width: 1200px)" srcset="/fed22d-grafiska-verktyg-bruschettan/assets/desktop-8ec84d66.png " />
+            <img src="/fed22d-grafiska-verktyg-bruschettan/assets/gadget_mobile-e829414b.png" loading="lazy" alt="motherboard with processor"/>
+          </picture>
+        </div>
+       <div class="startpage-container">
+          <div class="firefly-container">
+            <img src="/fed22d-grafiska-verktyg-bruschettan/assets/firefly-logo-notext-e957ce0f.svg" id="firefly">
+            <h1>Quant Firefly</h1>
+            <h3>First Quantum Processor</h3>
+          </div>
+          <p class="smaller-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, 
+            molestiae quas vel sint commodi praesentium optio, eaque rerum! 
+            Provident similique accusantium nemo autem. Veritatis  culpa officia aut!
+          </p>
+          <p class="larger-text visually-hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur 
+            voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio,
+            eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut 
+            molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!
+          </p>
+          <button class="learnMore-btn">Learn more</button>
+        </div>
       </div>
-    </header>
+      <div class="subscribe-newsletter">
+          <h2>Subscribe To Our News Letter!</h2>
+          <form>
+            <input id="email" type="text" placeholder="E-Mail" />
+            <button id="submitBtn" disabled class="disabledBtn">Submit</button>
+          </form>
+      </div> 
+    </section>
     <section class="products">
       <h2>Which FireFly are you?</h2>
       <hr />
@@ -114,6 +134,7 @@
       <button>Accept</button>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
     
     
     
