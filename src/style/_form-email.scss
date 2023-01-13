@@ -62,8 +62,8 @@
         height: 147px;
         border: var.$primaryColor solid 1px;
         position: absolute;
-        top: 40em;
-        right: 4.2em;
+        top: 480px;
+        right: 35px;
         h2 {
             text-align: start;
             width: 100%;
@@ -85,9 +85,4 @@
     }
 }
 
-@media screen and (min-width: 1400px) {
-    .subscribe-newsletter{
-        top: 38.5em;
-        right: 11.5em;
-    }
-}
+
