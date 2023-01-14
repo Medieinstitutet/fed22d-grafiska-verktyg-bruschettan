@@ -15,16 +15,15 @@ menuNav.classList.toggle('hidden-menu');
  */
 
 const menuToggle = () => {
-  // eslint-disable-next-line new-cap
-
   menuNav.classList.toggle('hidden-menu');
   if (!menuNav.classList.contains('hidden-menu')) {
     gsap.to(menuFirelyMove, {
       scaleX: (-1),
-      transform: 'translatex(-40vw)',
+      transform: 'translatex(-30vw)',
       rotation: '45_cw',
       y: 15,
       opacity: 0,
+      ease: 'back',
     });
 
     gsap.fromTo(
