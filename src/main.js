@@ -29,6 +29,7 @@ let cardsHtml = '';
 let mobileSwipeHtml = '';
 let swiper = '';
 let swiper2 = '';
+let startTimeOut;
 
 // funktion för att skapa två olika slideshows beroende på skärmstorlek
 function createSwipers() {
@@ -85,6 +86,7 @@ cardsArray.forEach((card) => {
 });
 
 function createSwipe() {
+  console.log('körs');
   /// obs, fel värde här pga sidescroll, fixa när vi
   // gör slutputs
   if (window.innerWidth < 653) {
@@ -107,4 +109,12 @@ createSwipe();
 createSwipers();
 
 // EventListener som känner av skärmbredd, för att göra sidan responsiv
-window.addEventListener('resize', createSwipe);
+// window.addEventListener('resize', createSwipe)
+
+function resizeTimers() {
+  clearTimeout(startTimeOut);
+
+  startTimeOut = setTimeout(createSwipe, 500);
+}
+
+window.addEventListener('resize', resizeTimers);
