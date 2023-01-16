@@ -66,7 +66,7 @@ function createCards() {
         <div class="swiper-pagination"></div>
       </div>
   
-      <p class="card-description">${card.description}<a> <img src="img/arrow_next.png" alt="link to description" loading="lazy"></a></p>
+      <p class="card-description">${card.description}<a> <img src="img/arrow_next.webp" alt="link to description" loading="lazy"></a></p>
       
       <button class="order-btn">Order</button>
     </div>`;
