@@ -62,8 +62,8 @@ function createCards() {
   
       <div class="swiper mySwiper1">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/${card.img1}"></div>
-          <div class="swiper-slide"><img src="img/${card.img2}"></div>
+          <div class="swiper-slide"><img src="img/${card.img1}" alt="Circuit model"></div>
+          <div class="swiper-slide"><img src="img/${card.img2}" alt="Circuit model"></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
