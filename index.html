@@ -12,15 +12,23 @@
     <script src="https://kit.fontawesome.com/bae5c522cf.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">   <!--To speed up page parsing-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-
     <title>Quant FireFly</title>
-    <script type="module" crossorigin src="/fed22d-grafiska-verktyg-bruschettan/assets/index-68777c24.js"></script>
-    <link rel="stylesheet" href="/fed22d-grafiska-verktyg-bruschettan/assets/index-8164926e.css">
+    <script type="module" crossorigin src="/fed22d-grafiska-verktyg-bruschettan/assets/index-3470c560.js"></script>
+    <link rel="stylesheet" href="/fed22d-grafiska-verktyg-bruschettan/assets/index-94d6b0c6.css">
   </head>
   <body>
-  
+
+    <section class="menu-button-container">
+      <button id="menu-button" class="menu-btn-stripes" aria-label="Open/Close the menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </section>
+
     <nav class="menu-nav">
       <ul class="menu-container">
         <li><a href="#">Home</a></li>
@@ -30,22 +38,14 @@
       </ul>
     </nav>
 
-    <div class="menu-button-container">
-      <button id="menu-button" class="menu-btn-stripes" aria-label="Open/Close the menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
     <section class="start-page">
       <div class="startpage-flexbox">
         <div class="picture">
           <picture>
-            <source media="(max-witdh: 480px)" srcset="/fed22d-grafiska-verktyg-bruschettan/assets/gadget_mobile-e829414b.png " />
-            <source media="(min-width: 601px) and (max-width: 1199px)" srcset="/fed22d-grafiska-verktyg-bruschettan/assets/gadget_tablet-6b7265c3.png " />
-            <source media="(min-width: 1200px)" srcset="/fed22d-grafiska-verktyg-bruschettan/assets/desktop-8ec84d66.png " />
-            <img src="/fed22d-grafiska-verktyg-bruschettan/assets/gadget_mobile-e829414b.png" loading="lazy" alt="motherboard with processor"/>
+            <source media="(max-witdh: 480px)" srcset="/fed22d-grafiska-verktyg-bruschettan/assets/gadget_mobile-c48c9dcd.webp " />
+            <source media="(min-width: 601px) and (max-width: 1199px)" srcset="/fed22d-grafiska-verktyg-bruschettan/assets/gadget_tablet-2aa49ad3.webp " />
+            <source media="(min-width: 1200px)" srcset="/fed22d-grafiska-verktyg-bruschettan/assets/desktop-9cb0c106.webp " />
+            <img src="/fed22d-grafiska-verktyg-bruschettan/assets/gadget_mobile-c48c9dcd.webp" loading="lazy" alt="motherboard with processor"/>
           </picture>
         </div>
        <div class="startpage-container">
@@ -79,7 +79,7 @@
       
     </section>
     <section class="products">
-      <h2>Which FireFly are you?</h2>
+      <h3 class="cards-header">Which FireFly are you?</h3>
       <hr />
       <div id="cards-holder" class="cards-holder"></div>
     </section>
@@ -96,33 +96,33 @@
         <div class="quick-links-container">
           <h3>Quick links</h3>
           <ul>
-            <li><a>FireFly Drivers</a></li>
-            <li><a>Models</a></li>
-            <li><a>Find us on amazon</a></li>
-            <li><a>Getting started</a></li>
-            <li><a>Newsletter</a></li>
+            <li><a href="#">FireFly Drivers</a></li>
+            <li><a href="#">Models</a></li>
+            <li><a href="#">Find us on amazon</a></li>
+            <li><a href="#">Getting started</a></li>
+            <li><a href="#">Newsletter</a></li>
           </ul>
         </div>
         <div class="follow-us-container">
           <h3 class="hidden-h3-mobile">Follow us</h3>
           <ul class="icon-mobile-list">
             <li>
-              <a aria-label="Visit our facebook page!" target="_blank" rel="noopener noreferrer">
+              <a href="#" aria-label="Visit our facebook page!" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-facebook"></i>
               </a>
             </li>
             <li>
-              <a aria-label="Visit our twitter page!" target="_blank" rel="noopener noreferrer">
+              <a href="#" aria-label="Visit our twitter page!" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a aria-label="Visit our linkedIn page!" target="_blank" rel="noopener noreferrer">
+              <a href="#" aria-label="Visit our linkedIn page!" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
             </li>
             <li>
-              <a aria-label="Send us an email" target="_blank" rel="noopener noreferrer">
+              <a href="#" aria-label="Send us an email" target="_blank" rel="noopener noreferrer">
                 <i class="fa-solid fa-envelope"></i>
               </a>
             </li>
