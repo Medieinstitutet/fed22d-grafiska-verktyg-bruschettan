@@ -7,20 +7,20 @@ import './style/style.scss';
 const cards = [{
   name: 'FireFly 300',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
-  img1: '300_1.png',
-  img2: '300_2.png',
+  img1: '300_1.webp',
+  img2: '300_2.webp',
 },
 {
   name: 'FireFly 700',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
-  img1: '700_1.png',
-  img2: '700_2.png',
+  img1: '700_1.webp',
+  img2: '700_2.webp',
 },
 {
   name: 'FireFly 900',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
-  img1: '900_1.png',
-  img2: '900_2.png',
+  img1: '900_1.webp',
+  img2: '900_2.webp',
 },
 ];
 
@@ -29,6 +29,7 @@ let cardsHtml = '';
 let mobileSwipeHtml = '';
 let swiper = '';
 let swiper2 = '';
+let startTimeOut;
 
 // funktion för att skapa två olika slideshows beroende på skärmstorlek
 function createSwipers() {
@@ -40,6 +41,7 @@ function createSwipers() {
     },
     autoplay: {
       delay: 3000,
+      disableOnInteraction: false,
     },
   });
   // den yttre swipern, med pilar
@@ -66,7 +68,7 @@ function createCards() {
         <div class="swiper-pagination"></div>
       </div>
   
-      <p class="card-description">${card.description}<a> <img src="img/arrow_next.png" alt="link to description" loading="lazy"></a></p>
+      <p class="card-description">${card.description}<a> <img src="img/arrow_next.webp" alt="link to description" loading="lazy"></a></p>
       
       <button class="order-btn">Order</button>
     </div>`;
@@ -85,9 +87,7 @@ cardsArray.forEach((card) => {
 });
 
 function createSwipe() {
-  /// obs, fel värde här pga sidescroll, fixa när vi
-  // gör slutputs
-  if (window.innerWidth < 551) {
+  if (window.innerWidth < 653) {
     cardsHolder.innerHTML = `
     <div class="swiper mySwiper2">
         <div class="swiper-wrapper">
@@ -107,4 +107,12 @@ createSwipe();
 createSwipers();
 
 // EventListener som känner av skärmbredd, för att göra sidan responsiv
-window.addEventListener('resize', createSwipe);
+// window.addEventListener('resize', createSwipe)
+
+function resizeTimers() {
+  clearTimeout(startTimeOut);
+
+  startTimeOut = setTimeout(createSwipe, 500);
+}
+
+window.addEventListener('resize', resizeTimers);

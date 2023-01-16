@@ -4,33 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quant FireFly - High end processors!">
+    <meta property="og:title" content="Quant FireFly - High end processors!">
+    <meta property="og:type" content="webpage">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
     <script src="https://kit.fontawesome.com/bae5c522cf.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">   <!--To speed up page parsing-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-
     <title>Quant FireFly</title>
   </head>
   <body>
-    <!--Gör om till ul-li?-->
-    <nav class="menu-nav">
-      <div class="menu-container">
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-      </div>
-    </nav>
 
-    <div class="menu-button-container">
-      <div id="menu-button" class="menu-btn-stripes" aria-label="Open/Close the menu">
+    <section class="menu-button-container">
+      <button id="menu-button" class="menu-btn-stripes" aria-label="Open/Close the menu">
         <span></span>
         <span></span>
         <span></span>
-      </div>
-      <!-- <i class="fa-solid fa-x"></i> -->
-    </div>
+      </button>
+    </section>
+
+    <nav class="menu-nav">
+      <ul class="menu-container">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
     <section class="start-page">
       <div class="startpage-flexbox">
@@ -45,7 +49,7 @@
         </div>
        <div class="startpage-container">
           <div class="firefly-container">
-            <img src="/assets/firefly-logo-notext.svg" id="firefly">
+            <img src="public/img/firefly-logo-notext.svg" id="firefly">
             <h1>Quant Firefly</h1>
             <h3>First Quantum Processor</h3>
           </div>
@@ -63,7 +67,7 @@
       
     </section>
     <section class="products">
-      <h2>Which FireFly are you?</h2>
+      <h3 class="cards-header">Which FireFly are you?</h3>
       <hr />
       <div id="cards-holder" class="cards-holder"></div>
     </section>
@@ -71,37 +75,44 @@
       <div class="footer-content-container">
         <div class="find-us-container"> 
           <h3>Find us</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /><br />
             Example street 123a<br />
             +46-705556789<br />
             info@firefly.com
           </p>
         </div>
         <div class="quick-links-container">
-          <h3>Qiuck links</h3>
+          <h3>Quick links</h3>
           <ul>
-            <li><a>FireFly Drivers</a></li>
-            <li><a>Models</a></li>
-            <li><a>Find us on amazon</a></li>
-            <li><a>Getting started</a></li>
-            <li><a>Newsletter</a></li>
+            <li><a href="#">FireFly Drivers</a></li>
+            <li><a href="#">Models</a></li>
+            <li><a href="#">Find us on amazon</a></li>
+            <li><a href="#">Getting started</a></li>
+            <li><a href="#">Newsletter</a></li>
           </ul>
         </div>
         <div class="follow-us-container">
           <h3 class="hidden-h3-mobile">Follow us</h3>
           <ul class="icon-mobile-list">
             <li>
-              <a><i class="fa-brands fa-facebook" aria-label="Visit our facebook page!"></i></a>
+              <a href="#" aria-label="Visit our facebook page!" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
             </li>
             <li>
-              <a><i class="fa-brands fa-twitter" aria-label="Visit our twitter page!"></i></a>
+              <a href="#" aria-label="Visit our twitter page!" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
             </li>
             <li>
-              <a><i class="fa-brands fa-linkedin-in" aria-label="Visit our linkedIn page!"></i></a>
+              <a href="#" aria-label="Visit our linkedIn page!" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
             </li>
             <li>
-              <a><i class="fa-solid fa-envelope" aria-label="Send us an email"></i></a>
+              <a href="#" aria-label="Send us an email" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
             </li>
           </ul>
         </div>
