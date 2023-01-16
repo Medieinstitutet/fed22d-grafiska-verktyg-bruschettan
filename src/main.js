@@ -41,6 +41,7 @@ function createSwipers() {
     },
     autoplay: {
       delay: 3000,
+      disableOnInteraction: false,
     },
   });
   // den yttre swipern, med pilar
@@ -86,9 +87,6 @@ cardsArray.forEach((card) => {
 });
 
 function createSwipe() {
-  console.log('körs');
-  /// obs, fel värde här pga sidescroll, fixa när vi
-  // gör slutputs
   if (window.innerWidth < 653) {
     cardsHolder.innerHTML = `
     <div class="swiper mySwiper2">
