@@ -13,19 +13,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.visually-hidden{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 section.start-page{
     margin-top: 5rem;
     margin-bottom: 10rem;
@@ -40,7 +27,8 @@ section.start-page{
     picture{
         display: flex;
         justify-content: center;
-        margin-bottom: 2em;
+        margin-top: 5em;
+        margin-bottom: 1em;
     }
 
     .startpage-container{
@@ -59,8 +47,8 @@ section.start-page{
         height: 5em;
         width: 4em;
         position: absolute;
-        left: -1em;
-        top: -2.4em;
+        left: -1.5em;
+        top: -1.5em;
     }
 
     h1{
@@ -83,15 +71,16 @@ section.start-page{
     }
 
     p{
-        max-width: 60%;
+        max-width: 80%;
         margin: 0 auto;
         margin-top: 4rem;
         margin-bottom: 6rem;
+        font-size: 16px;
     }
 
     button.learnMore-btn{
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         padding-top: 10px;
         padding-bottom: 10px;
         font-size: 30px;
@@ -99,28 +88,23 @@ section.start-page{
 
 }
 
-@media screen and (min-width: 350px) {
-    section.start-page{
-        #firefly{
-            align-self: center;
-            height: 6em;
-            width: 5em;
-            position: absolute;
-            left: -3em;
-            top: -3em;
-        }
-    }
-    
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 601px) {
     section.start-page{
         margin-top: 3.5rem;
+
+        picture{
+            margin-top: unset;
+            margin-bottom: unset;
+        }
+
+        .firefly-container{
+            margin-bottom: 2.5em;
+        }
 
         #firefly{
             height: 7em;
             width: 6em;
-            top: -3.4rem;
+            top: -3rem;
             left: -3rem;
         }
 
@@ -134,8 +118,7 @@ section.start-page{
         }
 
         p{
-            max-width: 540px;
-            margin-left: 50px;
+            max-width: 470px;
         }
 
         button.learnMore-btn{
@@ -158,23 +141,39 @@ section.start-page{
             margin-bottom: 15rem;
         }
 
+        picture{
+            position: absolute;
+            top: 1em;
+            left: 21.5em;
+        }
+
         h1 {
             margin-left: 10px;
         }
 
         .startpage-container{
             max-width: 400px;
-            margin-left: 4em;
+            margin-right: 34em;
             align-items: start;
+        }
+
+        .firefly-container{
+            margin-bottom: unset;
+        }
+
+        #firefly{
+            height: 8em;
+            width: 7em;
+            top: -3.7rem;
+            left: -3rem;
         }
 
         button.learnMore-btn{
             font-size: 20px;
             padding-left: 1.8rem;
             padding-right: 1.8rem;
-            padding-top: 14px;
-            padding-bottom: 14px;
-            margin-right: 10em;
+            padding-top: 17px;
+            padding-bottom: 17px;
         }
 
         p{
@@ -182,6 +181,7 @@ section.start-page{
             margin-right: 8em;
             margin-bottom: 3rem;
             margin-left: 0;
+            font-size: 14px;
         }
     }
 }
@@ -192,6 +192,18 @@ section.start-page{
         .startpage-flexbox{
             margin-top: 10rem;
             margin-bottom: 15rem;
+        }
+
+        picture{
+            position: absolute;
+            top: -1em;
+            left: 23em;
+        }
+
+        .startpage-container{
+            max-width: 400px;
+            margin-right: 50em;
+            align-items: start;
         }
 
     }
