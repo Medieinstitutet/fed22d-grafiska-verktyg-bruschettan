@@ -1,0 +1,100 @@
+@use 'variables' as var;
+
+    .display-none{
+        display: none;
+    }
+
+    .cookies{
+        height: 70px;
+        width: 100%;
+        background-color: #2C4263;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        z-index: 3;
+        
+        .cookies-text{
+            font-size: 0.6rem;
+            margin-left: 10px;
+        }
+
+        .cookies-btn{
+            height: 35px;
+            width: 50px;
+            font-size: 0.6rem;
+            
+            padding: {
+                left: 5px;
+                
+            }
+        }
+    }
+
+    @media only screen and (min-width: 350px){
+        .cookies{
+            height: 80px;
+
+            .cookies-text{
+                font-size: 0.7rem;
+            }
+        
+            .cookies-btn{
+                height: 35px;
+                width: 60px;
+                font-size: 0.7rem;
+                margin-right: 5px;
+                
+                padding: {
+                    left: 7px;
+                }
+            }
+            }
+    }
+
+    @media only screen and (min-width: 520px){
+        .cookies{
+            height: 90px;
+
+            .cookies-text{
+                font-size: 1rem;
+                margin-left: 20px
+            }
+        
+            .cookies-btn{
+                height: 40px;
+                width: 95px;
+                font-size: 1rem;
+                margin-right: 10px;
+                
+                padding: {
+                    left: 15px;
+                }
+            }
+            }
+    }
+
+    @media only screen and (min-width: 800px){
+        .cookies{
+            height: 100px;
+    
+            .cookies-text{
+                font-size: 1.2rem;
+                margin-left: 30px;
+            }
+        
+            .cookies-btn{
+                height: 45px;
+                width: 120px;
+                font-size: 1.2rem;
+                margin-right: 25px;
+                
+                padding: {
+                    left: 22px;
+                }
+            }
+            }
+    }
+
+

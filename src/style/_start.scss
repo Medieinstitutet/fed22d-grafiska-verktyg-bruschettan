@@ -29,6 +29,7 @@
 section.start-page{
     margin-top: 5rem;
     margin-bottom: 10rem;
+    margin: 0 auto;
 
     .startpage-flexbox{
         display: flex;
@@ -133,7 +134,8 @@ section.start-page{
         }
 
         p{
-            max-width: 60%;
+            max-width: 540px;
+            margin-left: 50px;
         }
 
         button.learnMore-btn{
@@ -149,16 +151,21 @@ section.start-page{
 
         .startpage-flexbox{
             flex-direction: row-reverse;
+            justify-content: space-around;
             position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 15rem;
         }
 
-        img{
-            margin-right: 3rem;
+        h1 {
+            margin-left: 10px;
         }
 
         .startpage-container{
-            max-width: unset;
+            max-width: 400px;
             margin-left: 4em;
+            align-items: start;
         }
 
         button.learnMore-btn{
@@ -171,30 +178,21 @@ section.start-page{
         }
 
         p{
-            max-width: 50%;
-            margin-right: 12em;
+            max-width: 250px;
+            margin-right: 8em;
             margin-bottom: 3rem;
+            margin-left: 0;
         }
     }
 }
 
 @media screen and (min-width: 1400px){
     section.start-page{
-        max-width: 80%;
-        margin: 0 auto;
-
+    
         .startpage-flexbox{
             margin-top: 10rem;
             margin-bottom: 15rem;
         }
 
-        .startpage-container{
-          margin-left: unset;
-        }
-
-        img{
-            margin-right: 0.5em;
-            margin-bottom: 4em;
-        }
     }
 }
