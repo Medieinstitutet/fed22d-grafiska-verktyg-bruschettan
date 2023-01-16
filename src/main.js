@@ -87,7 +87,7 @@ cardsArray.forEach((card) => {
 function createSwipe() {
   /// obs, fel värde här pga sidescroll, fixa när vi
   // gör slutputs
-  if (window.innerWidth < 551) {
+  if (window.innerWidth < 653) {
     cardsHolder.innerHTML = `
     <div class="swiper mySwiper2">
         <div class="swiper-wrapper">
