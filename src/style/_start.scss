@@ -141,13 +141,19 @@ section.start-page{
             margin-bottom: 15rem;
         }
 
+        picture{
+            position: absolute;
+            top: 1em;
+            left: 21.5em;
+        }
+
         h1 {
             margin-left: 10px;
         }
 
         .startpage-container{
             max-width: 400px;
-            margin-left: 4em;
+            margin-right: 34em;
             align-items: start;
         }
 
@@ -175,6 +181,7 @@ section.start-page{
             margin-right: 8em;
             margin-bottom: 3rem;
             margin-left: 0;
+            font-size: 14px;
         }
     }
 }
@@ -185,6 +192,18 @@ section.start-page{
         .startpage-flexbox{
             margin-top: 10rem;
             margin-bottom: 15rem;
+        }
+
+        picture{
+            position: absolute;
+            top: -1em;
+            left: 23em;
+        }
+
+        .startpage-container{
+            max-width: 400px;
+            margin-right: 50em;
+            align-items: start;
         }
 
     }
