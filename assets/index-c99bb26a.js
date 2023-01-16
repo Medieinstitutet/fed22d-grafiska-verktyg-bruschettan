@@ -4,13 +4,13 @@
   
       <div class="swiper mySwiper1">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/${u.img1}"></div>
-          <div class="swiper-slide"><img src="img/${u.img2}"></div>
+          <div class="swiper-slide"><img src="img/${u.img1}" alt="A CPU with flashy colors"></div>
+          <div class="swiper-slide"><img src="img/${u.img2}" alt="A CPU with flashy colors"></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
   
-      <p class="card-description">${u.description}<a> <img src="img/arrow_next.webp" alt="link to description" loading="lazy"></a></p>
+      <p class="card-description">${u.description}<a href="#"> <img src="img/arrow_next.webp" alt="link to description" loading="lazy"></a></p>
       
       <button class="order-btn">Order</button>
     </div>`})}Zr();Ve.innerHTML=ni;const Qr=document.querySelectorAll(".card");Qr.forEach(u=>{Xi+=`
