@@ -7,20 +7,20 @@ import './style/style.scss';
 const cards = [{
   name: 'FireFly 300',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
-  img1: '300_1.png',
-  img2: '300_2.png',
+  img1: '300_1.webp',
+  img2: '300_2.webp',
 },
 {
   name: 'FireFly 700',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
-  img1: '700_1.png',
-  img2: '700_2.png',
+  img1: '700_1.webp',
+  img2: '700_2.webp',
 },
 {
   name: 'FireFly 900',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis.',
-  img1: '900_1.png',
-  img2: '900_2.png',
+  img1: '900_1.webp',
+  img2: '900_2.webp',
 },
 ];
 
