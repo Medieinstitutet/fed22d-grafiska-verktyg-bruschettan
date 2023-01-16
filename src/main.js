@@ -62,13 +62,13 @@ function createCards() {
   
       <div class="swiper mySwiper1">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/${card.img1}"></div>
-          <div class="swiper-slide"><img src="img/${card.img2}"></div>
+          <div class="swiper-slide"><img src="img/${card.img1}" alt="A CPU with flashy colors"></div>
+          <div class="swiper-slide"><img src="img/${card.img2}" alt="A CPU with flashy colors"></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
   
-      <p class="card-description">${card.description}<a> <img src="img/arrow_next.webp" alt="link to description" loading="lazy"></a></p>
+      <p class="card-description">${card.description}<a href="#"> <img src="img/arrow_next.webp" alt="link to description" loading="lazy"></a></p>
       
       <button class="order-btn">Order</button>
     </div>`;
