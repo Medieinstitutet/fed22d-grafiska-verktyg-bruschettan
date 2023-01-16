@@ -10,9 +10,7 @@
 footer {
     height: 125px;
     width: 100vw;
-    max-width: 100%; //to prevent overflow
-    // position: absolute;
-    // bottom: 0;
+    max-width: 100%; 
     background-color: var.$sencondaryBlue;
     display: flex;
     flex-direction: column;
