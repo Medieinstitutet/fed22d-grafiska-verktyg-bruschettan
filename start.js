@@ -6,6 +6,14 @@ const firefly = document.querySelector('#firefly');
 // eslint-disable-next-line prefer-const
 let mediaquary = gsap.matchMedia();
 
+mediaquary.add('(max-width: 600px)', () => {
+  gsap.fromTo(firefly, { y: -300 }, { y: -10, duration: 1.7, ease: Back.easeOut });
+});
+
+mediaquary.add('(min-width: 601px)', () => {
+  gsap.fromTo(firefly, { y: -300 }, { y: 0, duration: 1.7, ease: Back.easeOut });
+});
+
 function changeTextAmount() {
   if (window.innerWidth > 480) {
     headerText.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. '
@@ -20,14 +28,11 @@ function changeTextAmount() {
   }
 }
 
-window.addEventListener('resize', changeTextAmount);
+function resizeTimer() {
+  const timeOut = setTimeout(changeTextAmount, 500);
+  clearTimeout(timeOut);
+}
 
-mediaquary.add('(max-width: 600px)', () => {
-  gsap.fromTo(firefly, { y: -300 }, { y: -10, duration: 1.7, ease: Back.easeOut });
-});
-
-mediaquary.add('(min-width: 601px)', () => {
-  gsap.fromTo(firefly, { y: -300 }, { y: 0, duration: 1.7, ease: Back.easeOut });
-});
+window.addEventListener('resize', resizeTimer);
 
 changeTextAmount();
