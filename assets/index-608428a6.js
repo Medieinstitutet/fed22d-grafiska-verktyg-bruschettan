@@ -15,7 +15,7 @@
       <button class="order-btn">Order</button>
     </div>`})}Kr();Ve.innerHTML=ni;const Zr=document.querySelectorAll(".card");Zr.forEach(u=>{Xi+=`
   <div class="swiper-slide">${u.innerHTML}</div>
-  `});function Wi(){window.innerWidth<551?(Ve.innerHTML=`
+  `});function Wi(){window.innerWidth<653?(Ve.innerHTML=`
     <div class="swiper mySwiper2">
         <div class="swiper-wrapper">
         ${Xi}
