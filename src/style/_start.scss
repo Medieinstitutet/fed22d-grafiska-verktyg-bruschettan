@@ -57,11 +57,11 @@ section.start-page{
         margin-bottom: 0;
     }
 
-    h2, h3{
+    h2, .first-quantum{
         color: var.$secondaryYellow;
     }
 
-    h3{
+    .first-quantum{
         position: absolute;
         font-weight: 400;
         margin-top: 0;
@@ -112,7 +112,7 @@ section.start-page{
             font-size: 50px;
         }
 
-        h3{
+        .first-quantum{
             top: 6rem;
             left: 5px;
         }
