@@ -59,11 +59,11 @@
 
 @media only screen and (min-width: 1200px){
     .subscribe-newsletter {
-        height: 147px;
+        height: 125px;
         border: var.$primaryColor solid 1px;
         position: absolute;
         top: 480px;
-        right: 35px;
+        right: 75px;
         h2 {
             text-align: start;
             width: 100%;
@@ -80,8 +80,24 @@
                 width: 400px;
                 color: white;
                 font-family: var.$prostoOne;
+                font-size: 28px;
+                margin-top: 0.5rem;
+            }
+
+            button{
+                height: unset;
+                width: unset;
+                font-size: 20px;
+                padding-top: 3px;
+                padding-bottom: 3px;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .subscribe-newsletter{
+        right: 1px;
     }
 }
 
