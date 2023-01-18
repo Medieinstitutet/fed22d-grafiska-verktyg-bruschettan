@@ -14,7 +14,14 @@ preferences.
 
 ## Authors
 
+    The coding team
 - [@existenztim](https://www.github.com/existenztim)
 - [@emiliamassing](https://github.com/emiliamassing)
 - [@evelinanorlin](https://github.com/evelinanorlin)
 - [@Sofilus](https://github.com/Sofilus)
+
+    The design team
+- [@antonjanzon95](https://www.github.com/antonjanzon95)
+- [@maedl](https://www.github.com/maedl)
+- [@nikolajnowicki](https://www.github.com/nikolajnowicki)
+- [@MattiasHeurlin](https://github.com/MattiasHeurlin)
