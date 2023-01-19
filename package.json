@@ -1,0 +1,27 @@
+{
+  "name": "fed22d-grafiska-verktyg-bruschettan",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "2.8.2",
+    "sass": "^1.57.1",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "gsap": "^3.11.4",
+    "parcel-bundler": "^1.3.1",
+    "swiper": "^8.4.5"
+  },
+  "tags": [
+    "swiper"
+  ]
+}

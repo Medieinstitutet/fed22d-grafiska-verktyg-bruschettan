@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Menu 
+========================================================================== */
+@use 'variables' as var;
+
+.hidden-menu {
+   visibility: hidden;
+}
+
+.menu-nav {
+    top: 0;
+    margin: 0;
+    display: flex;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    flex-direction: column;
+    z-index: 2;
+    position: fixed;
+    justify-content: center;
+    height: 100vh;
+    width: 109vw;
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+
+        li a {
+            color: var.$primaryColor;
+            font-size: 2.6rem; // 42px
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                text-shadow: 2px 2px 4px rgba(231, 177, 28, 0.55);
+            }
+        }
+    }
+}
+
+.menu-button-container {
+    position: fixed;
+    z-index: 3;
+    top: 2.5rem;
+    right: 4rem; 
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+
+    button {
+        // visibility: hidden;
+        position: relative; 
+        border-radius: 0;
+        margin: 0;
+        width: 50px;
+        height: 40px;
+        transform: translateX(16px);
+        background: rgba(0,0,0,0.0);  
+        box-shadow: none;
+        
+        span {
+            visibility: visible; 
+            width: 50px;
+            height: 6px;
+            background: var.$primaryColor;  
+            position: absolute; 
+            right: 0;
+            top: 1rem;
+     
+            &:nth-child(2) { //top stripe
+                 top: 0;
+                 }
+     
+            &:nth-child(3) { //bottom stripe
+                bottom: 0;
+                transform: translateY(16px);
+                 }
+         }
+    }
+  
+}
+
+/* ==========================================================================
+   Media query rules for menu
+========================================================================== */
+
+@media only screen and (min-width: 1201px) {
+    .menu-nav {
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 120px;
+        width: 100vw;
+        border-bottom: 2px solid var.$primaryColor;
+    
+        .menu-container {
+            flex-direction: row;
+            height: 100px;
+    
+            a {
+                margin: auto 3rem auto 3rem;
+            }
+        }
+    }
+  }
