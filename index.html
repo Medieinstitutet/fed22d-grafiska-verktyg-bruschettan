@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Quant FireFly - High end processors!">
     <meta property="og:title" content="Quant FireFly - High end processors!">
     <meta property="og:type" content="webpage">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
-    <meta name="theme-color" content="#FF7A00"/>
-    <script src="https://kit.fontawesome.com/bae5c522cf.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="theme-color" content="#FF7A00">
+    <script src="https://kit.fontawesome.com/bae5c522cf.js" crossorigin="anonymous" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" as="style"
     onload="this.onload=null;this.rel='stylesheet'">   <!--To speed up page parsing-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <title>Quant FireFly</title>
   </head>
   <body>
 
-    <section class="menu-button-container">
+    <div class="menu-button-container">
       <button id="menu-button" class="menu-btn-stripes" aria-label="Open/Close the menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
-    </section>
+    </div>
 
     <nav class="menu-nav">
       <ul class="menu-container">
@@ -41,11 +41,11 @@
       <div class="startpage-flexbox">
         <div class="picture">
           <picture>
-            <source media="(max-witdh: 480px)" srcset="/img/gadget_mobile.webp" />
-            <source media="(min-width: 601px) and (max-width: 1199px)" srcset="/img/gadget_tablet.webp" />
-            <source media="(min-width: 1200px) and (max-width: 1399px)" srcset="/img/smaller_desktop.webp" />
-            <source media="(min-width: 1400px)" srcset="/img/gadget_desktop.webp" />
-            <img src="/img/gadget_mobile.webp" alt="motherboard with processor"/>
+            <source media="(max-witdh: 480px)" srcset="/img/gadget_mobile.webp">
+            <source media="(min-width: 601px) and (max-width: 1199px)" srcset="/img/gadget_tablet.webp">
+            <source media="(min-width: 1200px) and (max-width: 1399px)" srcset="/img/smaller_desktop.webp">
+            <source media="(min-width: 1400px)" srcset="/img/gadget_desktop.webp">
+            <img src="/img/gadget_mobile.webp" alt="motherboard with processor">
           </picture>
         </div>
 
@@ -61,25 +61,25 @@
         <div class="subscribe-newsletter">
           <h2>Subscribe To Our News Letter!</h2>
           <form>
-            <input id="email" type="text" placeholder="E-Mail" />
+            <input id="email" type="text" placeholder="E-Mail">
             <button id="submitBtn" disabled class="disabledBtn">Submit</button>
           </form>
         </div> 
       </div>
-      
     </section>
+
     <section class="products">
       <h3 class="cards-header">Which FireFly are you?</h3>
-      <hr />
+      <hr>
       <div id="cards-holder" class="cards-holder"></div>
     </section>
     <footer>
       <div class="footer-content-container">
         <div class="find-us-container"> 
           <h3>Find us</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /><br />
-            Example street 123a<br />
-            +46-705556789<br />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><br>
+            Example street 123a<br>
+            +46-705556789<br>
             info@firefly.com
           </p>
         </div>
@@ -131,19 +131,19 @@
       </div>
     </footer>
     <div id="cookies">
-      <section class="cookies" >
+      <div class="cookies" >
         <p class="cookies-text">Allow cookies for this website</p>
         <div>
           <button class="cookies-btn">Decline</button>
           <button class="cookies-btn" id="acceptCookiesBtn">Accept</button>
         </div>
-      </section>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="/src/main.js" type="module" defer></script>
-    <script src="/src/start.js" type="module" defer></script>
-    <script src="/src/menu.js" type="module" defer></script>
-    <script src="/src/subscribe-newsletter.js" type="module" defer></script>
-    <script src="/src/cookies.js" type="module" defer></script>
+    <script src="/src/main.js" type="module"></script>
+    <script src="/src/startpage.js" type="module"></script>
+    <script src="/src/menu.js" type="module"></script>
+    <script src="/src/subscribe-newsletter.js" type="module"></script>
+    <script src="/src/cookies.js" type="module"></script>
   </body>
 </html>
